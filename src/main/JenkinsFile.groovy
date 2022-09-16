@@ -10,7 +10,7 @@ pipeline{
                     sh 'mvn clean package'
                }
                post{
-                    succes{
+                    success{
                          echo "Archiving the Artificats"
                          archiveArtificats artificats: '**/target/*.war'
                     }
